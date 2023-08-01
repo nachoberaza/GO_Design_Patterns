@@ -1,14 +1,11 @@
 package journal
 
 import (
-	"fmt"
-	"github.com/edsrzf/mmap-go"
+	"encoding/json"
 	"os"
-	"sync"
 )
 
 type Persistence struct {
-	FileLocker sync.Mutex
 }
 
 func (p *Persistence) SaveToFile(journal *Journal, filename string) error {
@@ -17,27 +14,17 @@ func (p *Persistence) SaveToFile(journal *Journal, filename string) error {
 		return openFileErr
 	}
 
-	// TODO: Serialize journal struct
-	//_, writeError := file.Write(journal)
-
 	defer file.Close()
 
-	mMap, mMapErr := mmap.Map(file, mmap.RDWR, 0)
-	if mMapErr != nil {
-		return mMapErr
-	}
-
-	fmt.Printf("Showing map:\n")
-	fmt.Println(string(mMap))
-	fmt.Printf("Map showed:\n\n")
-
-	if err := mMap.Unmap(); err != nil {
-		return err
-	}
-
-	err := mMap.Flush()
+	serializedJournal, err := json.MarshalIndent(journal, "", "")
 	if err != nil {
 		return err
 	}
+
+	err = os.WriteFile(filename, serializedJournal, 0644)
+	if err != nil {
+		return err
+	}
+
 	return nil
 }
