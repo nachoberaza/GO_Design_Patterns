@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/baldurdevs/go_desing_patterns/solid_principles/opencloseprinciple/filter"
-	"github.com/baldurdevs/go_desing_patterns/solid_principles/opencloseprinciple/product"
+	"github.com/baldurdevs/go_desing_patterns/solid/openclose/filter"
+	"github.com/baldurdevs/go_desing_patterns/solid/openclose/product"
 )
 
 func main() {

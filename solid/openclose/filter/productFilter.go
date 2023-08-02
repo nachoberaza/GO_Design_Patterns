@@ -1,6 +1,6 @@
 package filter
 
-import "github.com/baldurdevs/go_desing_patterns/solid_principles/opencloseprinciple/product"
+import "github.com/baldurdevs/go_desing_patterns/solid/openclose/product"
 
 type ProductFilter struct {
 	ColorSpecification *product.ColorSpecification
