@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/baldurdevs/go_desing_patterns/solid_principles/single_responsability/journal"
+	"github.com/baldurdevs/go_desing_patterns/solid_principles/singleresponsability/journal"
 )
 
 func main() {

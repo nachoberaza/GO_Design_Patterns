@@ -9,9 +9,9 @@ type Persistence struct {
 }
 
 func (p *Persistence) SaveToFile(journal *Journal, filename string) error {
-	file, openFileErr := os.OpenFile(filename, os.O_RDWR|os.O_CREATE, 0755)
-	if openFileErr != nil {
-		return openFileErr
+	file, err := os.OpenFile(filename, os.O_RDWR|os.O_CREATE, 0755)
+	if err != nil {
+		return err
 	}
 
 	defer file.Close()
