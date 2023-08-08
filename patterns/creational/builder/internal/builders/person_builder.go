@@ -7,7 +7,9 @@ type PersonBuilder struct {
 }
 
 func NewPersonBuilder() *PersonBuilder {
-	return &PersonBuilder{}
+	return &PersonBuilder{
+		person: &domain.Person{},
+	}
 }
 
 func (pb *PersonBuilder) Build() *domain.Person {

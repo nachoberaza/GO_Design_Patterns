@@ -20,7 +20,9 @@ func (bd *BuilderDirector) DirectConstruction() {
 
 	// Another way of object construction
 	personJobBuilder := bd.pb.Works()
-	personJobBuilder.At("Fabrikam").Earning(123000)
+	personJobBuilder.
+		At("Fabric").
+		Earning(123000)
 
 	person := bd.pb.Build()
 	fmt.Println(*person)
