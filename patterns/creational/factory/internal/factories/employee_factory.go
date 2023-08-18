@@ -1,6 +1,6 @@
 package factories
 
-import "github.com/baldurdevs/go_desing_patterns/patterns/creational/factory/internal/domain"
+import "github.com/nachoberaza/GO_Desing_Patterns/patterns/creational/factory/internal/domain"
 
 type EmployeeFactory struct {
 	position     string

@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/baldurdevs/go_desing_patterns/solid/liskov_substitution/shapes"
+	"github.com/nachoberaza/GO_Desing_Patterns/solid/liskov_substitution/shapes"
 )
 
 func main() {

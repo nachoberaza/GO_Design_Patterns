@@ -1,6 +1,6 @@
 package machines
 
-import "github.com/baldurdevs/go_desing_patterns/solid/interface_segregation/document"
+import "github.com/nachoberaza/GO_Desing_Patterns/solid/interface_segregation/document"
 
 type Photocopier struct {
 	printer Printer

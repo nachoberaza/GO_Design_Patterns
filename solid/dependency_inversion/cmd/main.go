@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/baldurdevs/go_desing_patterns/solid/dependency_inversion/highlevel"
-	"github.com/baldurdevs/go_desing_patterns/solid/dependency_inversion/lowlevel"
+	"github.com/nachoberaza/GO_Desing_Patterns/solid/dependency_inversion/highlevel"
+	"github.com/nachoberaza/GO_Desing_Patterns/solid/dependency_inversion/lowlevel"
 )
 
 func main() {

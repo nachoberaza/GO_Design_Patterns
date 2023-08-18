@@ -3,7 +3,7 @@ package directors
 import (
 	"fmt"
 
-	"github.com/baldurdevs/go_desing_patterns/patterns/creational/builder/internal/builders"
+	"github.com/nachoberaza/GO_Desing_Patterns/patterns/creational/builder/internal/builders"
 )
 
 type BuilderDirector struct {

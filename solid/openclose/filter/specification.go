@@ -1,6 +1,6 @@
 package filter
 
-import "github.com/baldurdevs/go_desing_patterns/solid/openclose/product"
+import "github.com/nachoberaza/GO_Desing_Patterns/solid/openclose/product"
 
 type Specification interface {
 	IsSatisfied(p *product.Product) bool

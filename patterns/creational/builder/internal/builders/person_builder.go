@@ -1,6 +1,6 @@
 package builders
 
-import "github.com/baldurdevs/go_desing_patterns/patterns/creational/builder/internal/domain"
+import "github.com/nachoberaza/GO_Desing_Patterns/patterns/creational/builder/internal/domain"
 
 type PersonBuilder struct {
 	person *domain.Person

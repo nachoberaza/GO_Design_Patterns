@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/baldurdevs/go_desing_patterns/patterns/creational/factory/internal/factories"
+
+	"github.com/nachoberaza/GO_Desing_Patterns/patterns/creational/factory/internal/factories"
 )
 
 func main() {
