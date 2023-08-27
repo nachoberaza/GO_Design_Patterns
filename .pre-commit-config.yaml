@@ -7,5 +7,8 @@ repos:
         -   id: trailing-whitespace
             exclude: ^/README.md
         -   id: end-of-file-fixer
+            exclude: ^/README.md
         -   id: check-yaml
+            exclude: ^/README.md
         -   id: check-added-large-files
+            exclude: ^/README.md
